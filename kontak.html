@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kontak</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <style>
+
+    </style>
+</head>
+
+<body style="background-image: url('images/putih.jpg'); 
+             background-size: cover; 
+             background-repeat: no-repeat; 
+             background-position: center;">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" width="70" class="me-3" alt="icon" class="icon"> 
+            <h2 class="mb-0">Wisata Pantai Bangka Belitung</h2>
+
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#">Kontak & Registrasi</a>
+                <ul class="dropdown-content">
+                    <li><a href="kontak.html">Kontak</a></li>
+                    <li><a href="registrasi.html">Registrasi</a></li>
+                </ul>
+            </li>
+            <li><a href="galeri.html">Galeri</a></li>
+        </ul>
+    </nav>
+    <div class="container-fluid p-0">
+        <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s"
+            style="background-image: url('images/bg1.jpg'); background-size: cover; background-position: center;">
+            <div class="container text-center py-5">
+                <h1 class="display-3 text-white mb-4 animated slideInDown">
+                    <marquee behavior="scroll" direction="left">Kontak</marquee>
+                </h1>
+            </div>  
+        </div>
+
+        <div style="padding-top: 100px;"></div>
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-end">
+                    <div class="kolom-lg-6 kolom-md-5 my-auto animated slideInLeft" data-wow-delay="0.6s">
+                        <img class="img-fluid rounded" src="images/bg2.jpg">
+                    </div>
+                    <div class="kolom-lg-6 kolom-md-7 my-auto animated slideInRight" data-wow-delay="0.9s">
+                        <div class="card shadow-lg border-0">
+                            <div class="card-body">
+                                <h2>Form Pesan</h2>
+                                <form action="proses_feedback.php" method="post">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label mb-3">Nama</label>
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            placeholder="Masukkan Nama Anda" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label mb-3">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="Masukkan Email Anda" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label mb-3">Pesan</label>
+                                        <textarea class="form-control" id="message" name="message" rows="4"
+                                            placeholder="Masukkan pesan Anda" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary text-white">Kirim Pesan</button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="padding-top: 100px;"></div>
+
+        <div class="container-fluid footer py-4" style="background-color: #161D6F;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center mb-2 mb-md-0">
+                        <h6 class="text-white animated slideInDown">
+                            &copy; 2024 Wisata Pantai Bangka Belitung. Didesain oleh <strong></strong>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/slider.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <style>
+        .faq-container {
+            max-width: 1500px;
+            /* Lebar maksimum diperluas */
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .faq-question {
+            font-size: 18px;
+            cursor: pointer;
+            color: #007BFF;
+            transition: color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            color: #0056b3;
+        }
+
+        .faq-answer {
+            font-size: 16px;
+            margin-top: 10px;
+            overflow: hidden;
+            max-height: 0;
+            /* Awalnya tersembunyi */
+            opacity: 0;
+            /* Awalnya transparan */
+            transition: max-height 0.5s ease, opacity 0.5s ease;
+            /* Animasi */
+            color: #666;
+        }
+
+        .faq-answer.active {
+            max-height: 1000px;
+            /* Cukup besar untuk memuat konten panjang */
+            opacity: 1;
+            /* Tampil sepenuhnya */
+        }
+    </style>
+
+</head>
+
+<body style="background-image: url('images/putih.jpg'); 
+             background-size: cover; 
+             background-repeat: no-repeat; 
+             background-position: center;">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" width="70" class="me-3" alt="icon" class="icon"> 
+            <h2 class="mb-0">Wisata Pantai Bangka Belitung</h2>
+
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#">Kontak & Registrasi</a>
+                <ul class="dropdown-content">
+                    <li><a href="kontak.html">Kontak</a></li>
+                    <li><a href="registrasi.html">Registrasi</a></li>
+                </ul>
+            </li>
+            <li><a href="galeri.html">Galeri</a></li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid p-0">
+        <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s"
+            style="background-image: url('images/bg1.jpg'); background-size: cover; background-position: center;">
+            <div class="container text-center py-5">
+                <h1 class="display-3 text-white mb-4 animated slideInDown">
+                    <marquee behavior="scroll" direction="left">About</marquee>
+                </h1>
+            </div>            
+        </div>
+
+
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-end">
+                    <div class="kolom-lg-12 kolom-md-5 animated slideInUp" data-wow-delay="0.4s">
+                        <img class="img-fluid rounded" width="100%" data-wow-delay="0.1s" src="images/bg1.jpg">
+                    </div>
+                    <div class="kolom-lg-12 kolom-md-7 animated slideInUp" data-wow-delay="0.7s">
+                        <div class="faq-container">
+                            <h1 class="faq-title">About</h1>
+
+                            <div class="faq-item">
+                                <div class="faq-question" onclick="toggleAnswer(1)">Tentang</div>
+                                <div class="faq-answer" id="answer-1">
+                                    Selamat datang di website Wisata Pantai Bangka Belitung, platform yang dirancang
+                                    untuk memperkenalkan keindahan alam dan destinasi pantai terbaik di Bangka Belitung
+                                    kepada
+                                    para pengunjung dan pecinta travelling. Kami hadir untuk memberikan informasi
+                                    lengkap
+                                    mengenai wisata pantai, sejarah, dan kekayaan budaya Bangka Belitung.
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <div class="faq-question" onclick="toggleAnswer(2)">Profil</div>
+                                <div class="faq-answer" id="answer-2">
+                                    Wisata Pantai Bangka Belitung adalah situs yang berfokus pada promosi wisata
+                                    pantai di wilayah Bangka Belitung. Dengan mengutamakan kenyamanan pengguna, kami
+                                    menyajikan
+                                    informasi terkini tentang destinasi pantai, aktivitas menarik, penginapan, hingga
+                                    kuliner
+                                    lokal. Kami berkomitmen untuk menjadi panduan terpercaya bagi siapa saja yang ingin
+                                    menjelajahi pesona alam Bangka Belitung.
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <div class="faq-question" onclick="toggleAnswer(3)">Sejarah</div>
+                                <div class="faq-answer" id="answer-3">
+                                    Website ini didirikan dengan tujuan mempromosikan pariwisata Bangka Belitung,
+                                    yang dikenal dengan pantai-pantainya yang eksotis, batu granit yang megah, dan
+                                    budaya lokal
+                                    yang kaya. Bangka Belitung telah menjadi salah satu destinasi wisata favorit di
+                                    Indonesia
+                                    sejak diraihnya perhatian global melalui film "Laskar Pelangi," yang memperkenalkan
+                                    keindahan Pantai Tanjung Tinggi dan sekitarnya. Kami ingin melanjutkan kisah
+                                    tersebut dengan
+                                    menghadirkan platform informatif yang mendukung perkembangan wisata lokal.
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <div class="faq-question" onclick="toggleAnswer(4)">Visi & Misi</div>
+                                <div class="faq-answer" id="answer-4">
+                                    <span style="font-size: 20px;"><b>Visi</b></span><br>
+                                    Menjadikan Bangka Belitung sebagai destinasi wisata pantai unggulan di Indonesia
+                                    yang dikenal di kancah internasional.
+                                    <br>
+                                    <span style="font-size: 20px;"><b>Misi</b></span><br>
+                                    <ol>
+                                        <li>Memperkenalkan keindahan pantai dan budaya Bangka Belitung kepada dunia.
+                                        </li>
+                                        <li>Mendukung perkembangan ekonomi lokal melalui promosi pariwisata.</li>
+                                        <li>Menyediakan informasi yang akurat dan inspiratif bagi wisatawan.</li>
+                                        <li>Mendorong kesadaran akan pentingnya menjaga kelestarian alam.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question" onclick="toggleAnswer(5)">Tujuan</div>
+                                <div class="faq-answer" id="answer-5">
+                                    <ul>
+                                        <li>Menyediakan informasi terperinci tentang wisata pantai Bangka Belitung,
+                                            termasuk aktivitas, fasilitas, dan rute perjalanan.</li>
+                                        <li>Memotivasi wisatawan lokal dan internasional untuk menjadikan Bangka
+                                            Belitung sebagai destinasi liburan utama.</li>
+                                        <li>Mendukung komunitas lokal dengan mempromosikan produk dan jasa mereka.</li>
+                                        <li>Membantu menjaga keberlanjutan lingkungan dengan mengedukasi wisatawan
+                                            tentang pentingnya ekowisata.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question" onclick="toggleAnswer(6)">Struktur Organisasi</div>
+                                <div class="faq-answer" id="answer-6">
+                                    <ul>
+                                        <li><strong>Direktur Pengelola</strong> - Bertanggung jawab atas pengawasan dan pengambilan keputusan strategis.</li>
+                                        <li><strong>Manajer Operasional</strong>
+                                            <ul>
+                                                <li>Mengelola fasilitas dan operasional harian.</li>
+                                                <li>Mengawasi kebersihan dan keamanan.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Manajer Pemasaran</strong>
+                                            <ul>
+                                                <li>Melakukan promosi melalui media sosial dan website.</li>
+                                                <li>Mengatur acara wisata.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Manajer Keuangan</strong>
+                                            <ul>
+                                                <li>Mengelola anggaran dan laporan keuangan.</li>
+                                                <li>Memastikan transparansi keuangan.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Koordinator Pemandu Wisata</strong>
+                                            <ul>
+                                                <li>Mengatur jadwal dan pelatihan pemandu wisata.</li>
+                                                <li>Memastikan pelayanan terbaik untuk wisatawan.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Tim Kebersihan dan Keamanan</strong>
+                                            <ul>
+                                                <li>Menjaga kebersihan area pantai.</li>
+                                                <li>Menangani situasi darurat dan pengawasan keamanan.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Tim Informasi dan Pelayanan Pengunjung</strong>
+                                            <ul>
+                                                <li>Menyediakan informasi wisata kepada pengunjung.</li>
+                                                <li>Melayani pertanyaan dan kebutuhan wisatawan.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Tim Pengembangan Ekowisata</strong>
+                                            <ul>
+                                                <li>Melaksanakan program keberlanjutan lingkungan.</li>
+                                                <li>Edukasi dan pengelolaan ekosistem pantai.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footer py-4" style="background-color: #161D6F;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center mb-2 mb-md-0">
+                        <h6 class="text-white animated slideInDown">
+                            &copy; 2024 Wisata Pantai Bangka Belitung. Didesain oleh <strong></strong>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/slider.js"></script>
+
+</body>
+
+</html>
