@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Wisata Pantai Bangka Belitung</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <style>
+
+    </style>
+</head>
+
+<body style="background-image: url('images/putih.jpg'); 
+             background-size: cover; 
+             background-repeat: no-repeat; 
+             background-position: center;">
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" width="70" class="me-3" alt="icon" class="icon"> 
+            <h2 class="mb-0">Wisata Pantai Bangka Belitung</h2>
+
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#">Kontak & Registrasi</a>
+                <ul class="dropdown-content">
+                    <li><a href="kontak.html">Kontak</a></li>
+                    <li><a href="registrasi.html">Registrasi</a></li>
+                </ul>
+            </li>
+            <li><a href="galeri.html">Galeri</a></li>
+        </ul>
+    </nav>
+
+    <div class="carousel-container">
+        <div id="carousel" class="carousel-slide">
+            <div class="carousel-item">
+                <img class="carousel-image" src="images/bg1.jpg" alt="Image 1">
+                <div class="carousel-caption">
+                    <h1 class="display-1 text-white mb-3">Wisata Pantai Bangka Belitung</h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-image" src="images/bg2.jpg" alt="Image 2">
+                <div class="carousel-caption">
+                    <h1 class="display-1 text-white mb-3">Wisata Pantai Bangka Belitung</h1>
+                </div>
+            </div>
+            <!-- Tambahkan lebih banyak slide jika diperlukan -->
+        </div>
+
+        <div class="carousel-control-prev" onclick="prevSlide()">❮</div>
+        <div class="carousel-control-next" onclick="nextSlide()">❯</div>
+    </div>
+
+
+    <div style="padding-top: 100px;"></div>
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="kolom-lg-8 kolom-md-5 my-auto animated slideInLeft" data-wow-delay="0.6s">
+                    <img class="img-fluid rounded" style="border-radius: 10%;" src="images/bg1.jpg">
+                    <div class="">
+                        <div class="">
+                            <br>
+                            <h2>Tentang</h2>
+                            <p>Website ini hadir untuk para penggemar hobi travelling yang ingin mengeksplorasi
+                                keindahan wisata pantai di Bangka Belitung. Dengan pasir putih yang lembut, air laut
+                                yang jernih, dan batu granit yang menakjubkan, Bangka Belitung menjadi tempat yang
+                                sempurna untuk menikmati liburan sekaligus menyalurkan hobi berpetualang.<br><br>
+
+                                Temukan rekomendasi pantai-pantai terbaik untuk travelling Anda, seperti:
+                            <ul>
+                                <li>
+                                    Pantai Parai Tenggiri: Cocok untuk liburan santai dengan pemandangan matahari
+                                    terbenam yang spektakuler.
+                                </li>
+                                <li>
+                                    Pantai Tanjung Tinggi: Lokasi ikonik yang wajib dikunjungi, terkenal karena
+                                    keindahannya dalam film "Laskar Pelangi".
+                                </li>
+                                <li>
+                                    Pantai Tanjung Kelayang: Surga bagi para pelancong dengan batu granit unik dan air
+                                    laut yang tenang.
+                                </li>
+                            </ul>
+                            <br>
+
+                            Website ini tidak hanya memberikan informasi destinasi, tetapi juga berisi panduan lengkap
+                            untuk mengembangkan hobi travelling Anda. Dari aktivitas seru seperti snorkeling, island
+                            hopping, hingga mencoba kuliner lokal, semuanya ada di sini. Kami juga menyarankan
+                            penginapan nyaman, paket wisata, serta tips perjalanan agar perjalanan hobi Anda semakin
+                            menyenangkan dan tak terlupakan.
+
+                            Jelajahi keindahan pantai-pantai di Bangka Belitung dan biarkan hobi travelling Anda membawa
+                            kenangan indah! </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="kolom-lg-4 kolom-md-7 my-auto animated slideInRight" style="padding-bottom: 36%;"
+                    data-wow-delay="0.9s">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-body text-center">
+                            <!-- Widget Jam Digital -->
+                            <div class="clock-widget">
+                                <div id="time" class="time-display"></div>
+                                <div id="date" class="date-widget"></div>
+                            </div>
+                            <br><br>
+                            <!-- Video YouTube -->
+                            <iframe class="rounded" width="100%" height="300"
+                                src="https://www.youtube.com/embed/ue8t0dX0mCg?si=oKBSpiM5AuWkb9p0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <h2 class="text-center">Pantai di Bangka Belitung</h2>
+                <br><br>
+                <div class="kolom-lg-4 kolom-md-5 my-auto animated slideInLeft" data-wow-delay="0.3s">
+                    <div class="card shadow">
+                        <img class="img-fluid rounded" style="height: 500px;object-fit: cover;" src="images/pn1.jpg"
+                            alt="Gambar Produk">
+                        <br> <br>
+                        <div class="card-body text-center">
+                            <h2 class="card-text">Pantai Parai Tenggiri</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="kolom-lg-4 kolom-md-5 my-auto animated slideInUp" data-wow-delay="0.6s">
+                    <div class="card shadow">
+                        <img class="img-fluid rounded" style="height: 500px;object-fit: cover;" src="images/pn2.webp"
+                            alt="Gambar Produk">
+                        <br> <br>
+                        <div class="card-body text-center">
+                            <h2 class="card-text">Pantai Tanjung Tinggi</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="kolom-lg-4 kolom-md-5 my-auto animated slideInRight" data-wow-delay="0.9s">
+                    <div class="card shadow">
+                        <img class="img-fluid rounded" style="height: 500px;object-fit: cover;" src="images/pn3.jpg"
+                            alt="Gambar Produk">
+                        <br> <br>
+                        <div class="card-body text-center">
+                            <h2 class="card-text">Pantai Tanjung Kelayang</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="padding-top: 100px;"></div>
+
+    <div class="container-fluid footer py-4" style="background-color: #161D6F;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-2 mb-md-0">
+                    <h6 class="text-white animated slideInDown">
+                        &copy; 2024 Wisata Pantai Bangka Belitung. Didesain oleh <strong></strong>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/slider.js"></script>
+    <script src="js/waktu.js"></script>
+</body>
+
+</html>
